@@ -1,6 +1,10 @@
+.muy-left {
+    padding-top: 2rem;
+}
+
 .social-media {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     background-repeat: no-repeat;
 }
 
@@ -41,9 +45,23 @@
     width: 100%;
 }
 
+@media screen and (min-width: 500px) {
+    .muy-left {
+        padding-top: 3rem;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .social-media {
         width: 25px;
         height: 25px;
+    }
+
+    .muy-left {
+        padding-top: 8.5rem;
+    }
+
+    .social-media-container {
+        width: 50%;
     }
 }
