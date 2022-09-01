@@ -1,11 +1,11 @@
 .muy-left {
-    padding-top: 2rem;
+    padding-top: 1.5rem;
 }
 
 .social-media {
-    width: 10px;
-    height: 10px;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 #discord {
@@ -27,7 +27,7 @@
 .btn-wallet {
     background-color: transparent;
     border: none;
-    width: 6rem;
+    width: 8rem;
     background-image: url("../images//UI/connectWallet.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -39,6 +39,7 @@
 .btn-wallet:focus,
 .btn-wallet:hover {
     background-color: transparent;
+    outline: none;
 }
 
 .flyman {
@@ -47,21 +48,16 @@
 
 @media screen and (min-width: 500px) {
     .muy-left {
-        padding-top: 3rem;
+        padding-top: 2.5rem;
     }
 }
-
+ 
 @media screen and (min-width: 1024px) {
-    .social-media {
-        width: 25px;
-        height: 25px;
-    }
-
     .muy-left {
-        padding-top: 8.5rem;
+        padding-top: 7rem;
     }
 
     .social-media-container {
-        width: 50%;
+        width: 65%;
     }
 }

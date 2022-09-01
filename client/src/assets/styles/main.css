@@ -1,10 +1,5 @@
 * {
   font-family: mundial, -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
-  overflow-x: hidden;
-}
-
-h1, h2, h3, h4, h5 {
-  overflow: hidden;
 }
 
 p {
@@ -15,20 +10,6 @@ hr {
   display: none;
 }
 
-.blue-button {
-  background-color: #515083;
-  border: none;
-  color: #ffffff;
-  border-radius: 100px;
-  font-size: 16px;
-  font-weight: 1000;
-  min-width: 165px;
-  max-width: 680px;
-  height: 40px;
-  text-align: center;
-  user-select: none;
-  -webkit-user-select: none;
-}
 
 .blue-button:hover,
 button:focus {

@@ -34,8 +34,8 @@ function App() {
       <Metaverse />
       <Stand />
       <Date />
-      <div className='row bg-black'>
-        <img src={require('./assets/images/comingsoon.gif').default} alt="Coming Soon" className='gif'/>
+      <div className="container-fluid">
+        <img src={require('./assets/images/comingsoon.gif').default} alt="Coming Soon" className="img-fluid" />
       </div>
       <button id={"wallet"} onClick={connectWallet}>
         <img src={require('./assets/images/connectWalletCircle.png').default} alt="Boton wallet flotante" className='circle-wallet'/>
