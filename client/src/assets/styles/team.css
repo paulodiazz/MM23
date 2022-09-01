@@ -1,0 +1,20 @@
+.btn-team {
+    border-radius: 100px;
+    background-color: #ddf21e;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    width: 60%;
+}
+
+@media screen and (min-width: 500px) {
+    .btn-team {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .btn-team {
+        width: 20%;
+    }
+}

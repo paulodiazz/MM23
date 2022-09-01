@@ -1,0 +1,96 @@
+.main-content {
+  width: 100%;
+}
+
+#muyLogo {
+  width: 50%;
+}
+
+.carrusel {
+  width: 100%;
+}
+
+.less-margin {
+  margin-top: -9rem;
+}
+
+.relative {
+  position: relative;
+  display: block;
+}
+
+.metaverse {
+  width: 100%;
+}
+
+.on-top {
+  width: 45%;
+  transform: translate(0%,-120%);
+}
+
+.nft {
+  width: 100%;
+}
+
+.team {
+  border-radius: 100px;
+  background-color: #ddf21e;
+  color: black;
+  font-size: 60px;
+  font-weight: 500;
+  padding: 1.75rem 2rem;
+  width: 55%;
+}
+
+@media screen and (min-width: 500px) {
+  #muyLogo {
+    width: 40%;
+  }
+
+  #info p {
+    font-weight: 400;
+  }
+
+  .carrusel {
+    width: 80%;
+  }
+
+  .less-margin {
+    margin-top: -22rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #muyLogo {
+    width: 20%;
+  }
+  
+  #info {
+    width: 60%;
+  }
+
+  #info p {
+    font-size: 24px;
+    font-weight: lighter;
+  }
+
+  .carrusel {
+    width: 45%;
+  }
+
+  .less-margin {
+    margin-top: -50rem;
+  }
+
+  .nft {
+    width: 50%;
+  }
+
+  .left {
+    margin-left: 20rem;
+  }
+
+  .right {
+    margin-right: 20rem;
+  }
+}

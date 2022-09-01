@@ -1,0 +1,28 @@
+.social-media {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    display: inline-block;
+    margin: auto 1rem;
+}
+
+#discord-black {
+    background-image: url("../images/socialMedia/DiscordBlack.svg");
+    background-repeat: no-repeat;
+}
+
+#twitter-black {
+    background-image: url("../images/socialMedia/TwitterBlack.svg");
+    background-repeat: no-repeat;
+}
+
+#instagram-black {
+    background-image: url("../images/socialMedia/InstagramBlack.svg");
+    background-repeat: no-repeat;
+}
+
+#youtube-black {
+    background-image: url("../images/socialMedia/YoutubeBlack.svg");
+    background-repeat: no-repeat;
+}

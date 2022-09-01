@@ -1,0 +1,29 @@
+.parent{
+    position: relative;
+    width: 100%;
+}
+
+.img{
+    width:100%;
+}
+
+.top-left p {
+        color: #FFFFFF;
+}
+
+@media screen and (min-width: 500px) {
+    .top-left{
+        position: absolute;
+        left:15%;
+        top:25%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .top-left{
+        position: absolute;
+        left:15%;
+        top:50%;
+        width: 25%;
+    }
+}

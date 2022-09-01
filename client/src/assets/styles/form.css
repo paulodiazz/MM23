@@ -1,0 +1,73 @@
+.overlay {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #00000080;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whitelist {
+    width: 80%;
+    border: 5px solid #616DBA;
+    border-radius: 0.5rem;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.whitelist h1 {
+    color: #DDF21E;
+    background-color: #616DBA;
+    background: -moz-linear-gradient(left,#DDF21E  0%,#616DBA 100%) !important;
+    background: -webkit-linear-gradient(left,#DDF21E  0%,#616DBA 100%) !important;
+    background: linear-gradient(to right,#DDF21E  0%,#616DBA  100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.cerrar {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 1.75rem;
+    height: 1.75rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: 0.3 ease all;
+    border-radius: 5px;
+    color: #616DBA;
+}
+
+.cerrar:hover {
+    background-color: #F2F2F2;
+}
+
+.whitelist input {
+    width: 80%;
+}
+
+@media screen and (min-width: 500px) {
+    .whitelist {
+        width: 50%;
+    }
+
+    .whitelist h1 {
+        font-size: 54px;
+    }
+
+    .whitelist input {
+        font-size: 24px;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .whitelist {
+        width: 35%;
+    }
+}

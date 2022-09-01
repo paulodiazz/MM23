@@ -1,0 +1,49 @@
+.social-media {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+
+#discord {
+    background-image: url(../images/socialMedia/Discord.svg);
+}
+
+#twitter {
+    background-image: url(../images/socialMedia/Twitter.svg);
+}
+
+#instagram {
+    background-image: url(../images/socialMedia/Instagram.svg);
+}
+
+#youtube {
+    background-image: url(../images/socialMedia/Youtube.svg);
+}
+
+.btn-wallet {
+    background-color: transparent;
+    border: none;
+    width: 6rem;
+    background-image: url("../images//UI/connectWallet.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    font-weight: bold;
+}
+
+.btn-wallet:active,
+.btn-wallet:focus,
+.btn-wallet:hover {
+    background-color: transparent;
+}
+
+.flyman {
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .social-media {
+        width: 25px;
+        height: 25px;
+    }
+}

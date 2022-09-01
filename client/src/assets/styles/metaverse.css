@@ -1,0 +1,29 @@
+.metaverse {
+    background-image: url("../images//welcometoverse.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+
+#flyman-metaverse {
+    width: 50%;
+    transform: translateY(8rem);
+}
+
+@media screen and (min-width: 500px) {
+    #flyman-metaverse {
+        width: 40%;
+        transform: translateY(6.5rem);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .metaverse {
+        height: 100vh;
+    }
+
+    #flyman-metaverse {
+        width: 35%;
+        transform: translateY(13rem);
+    }
+}

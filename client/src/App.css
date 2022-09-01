@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom */
+.cta {
+  position: fixed;
+  bottom: 0.4rem;
+  right: 90%;
+  width: 150px;
+  height: 150px;
+  z-index: 1;
+  transition: all 1s;
+}
+
+.circle-wallet {
+  width: 100%;
+}
+
+.hide {
+  opacity:0;
+  right:-100%;
+  background-color: transparent;
+  border: none;
+}
+.show {
+  opacity:1;
+  right:0;
+  background-color: transparent;
+  border: none;
+}
+
+.cta:hover,
+.cta:active,
+.cta:focus,
+.cta:disabled {
+  outline: 0;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 500px) {
+  .cta {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cta {
+    width: 275px;
+    height: 275px;
+  }
+}

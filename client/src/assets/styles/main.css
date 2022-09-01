@@ -1,0 +1,91 @@
+* {
+  font-family: mundial, -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+  overflow: hidden;
+}
+
+p {
+  font-size: 16px;
+}
+
+hr {
+  display: none;
+}
+
+.blue-button {
+  background-color: #515083;
+  border: none;
+  color: #ffffff;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 1000;
+  min-width: 165px;
+  max-width: 680px;
+  height: 40px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.blue-button:hover,
+button:focus {
+  background-color: #16437E;
+  outline: none;
+}
+
+.blue-button:active {
+  background: #09223b;
+}
+
+.blue-button:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+.bg-black {
+  background-color: #121212;
+}
+
+.bg-noise {
+  background-image: url('../images/beautiful_background.png');
+}
+
+.text-yellow {
+  color: #DDF21E;
+}
+
+@media screen and (min-width: 500px) {  
+  .blue-button {
+    font-size: 18px;
+    height: 50px;
+  }
+
+  .border-between > [class*='col-']:before {
+    background: black;
+    bottom: 0;
+    content: " ";
+    left: 0;
+    position: absolute;
+    width: 1px;
+    top: 0;
+  }
+  
+  .border-between > [class*='col-']:first-child:before {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  hr {
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 0;
+    border-top: 1px solid black;
+    width: 80%;
+  }
+}
