@@ -5,7 +5,6 @@ import Footer from './components/Footer';
 import Metaverse from './components/Metaverse';
 import Stand from './components/Stand';
 import Date from './components/Date';
-import Team from './components/Team';
 import './App.css';
 import './assets/styles/main.css';
 
@@ -35,7 +34,6 @@ function App() {
       <Metaverse />
       <Stand />
       <Date />
-      <Team />
       <div className='row bg-black'>
         <img src={require('./assets/images/comingsoon.gif').default} alt="Coming Soon" className='gif'/>
       </div>
