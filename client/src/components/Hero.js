@@ -6,11 +6,11 @@ import "../assets/styles/hero.css"
 import MuyLogo from '../assets/images/moymulogo.svg';
 
 
-const Hero = () => {
+const Hero = ({ account, setAccount, web3modal, setWeb3modal, provider, setProvider }) => {
 
-    const [account, setAccount] = useState(undefined);
-    const [web3modal, setWeb3modal] = useState();
-    const [provider, setProvider] = useState();
+    // const [account, setAccount] = useState(undefined);
+    // const [web3modal, setWeb3modal] = useState();
+    // const [provider, setProvider] = useState();
 
     return(
         <div className="hero bg-black">
@@ -35,19 +35,19 @@ const Hero = () => {
                             <div className="container w-75 pb-4">
                                 <img src={MuyLogo} alt="Logo Muy Muñoz 23" id='muyLogo' className='mx-auto'/>
                             </div>
-                            <div className="w-75 mx-auto d-flex justify-content-around">
+                            <div>
                                 { account?
                                     <>
-                                        <button className="btn-wallet p-4 text-uppercase font-weight-bold text-center" onClick={
+                                        <button className="btn-wallet pt-4 text-uppercase font-weight-bold text-center h5" onClick={
                                             async ()=>{
                                             await web3modal.clearCachedProvider();
                                             window.localStorage.clear();
                                             setAccount(undefined);
                                             setProvider();}
-                                            }>Disconnect</button>
+                                            }>DISCONNECT</button>
                                         </>:
                                     <>
-                                        <button className="btn-wallet p-4 text-uppercase font-weight-bold text-center" onClick={
+                                        <button className="btn-wallet pt-4 text-uppercase font-weight-bold text-center h5" onClick={
                                             () => {
                                             handleConnectWallet({
                                                 setAccount,
@@ -55,7 +55,7 @@ const Hero = () => {
                                                 setProvider
                                             })
                                             }
-                                        } >Connect</button>
+                                        } ></button>
                                     </>
                                 }
                             </div>

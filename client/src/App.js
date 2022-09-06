@@ -17,12 +17,16 @@ import './assets/styles/main.css';
 // };
 
 var scrollFunc = function() {
-  let myID = document.getElementById("wallet");
-  var y = window.scrollY;
-  if (y >= 80) {
-    myID.className = "cta show"
-  } else {
-    myID.className = "cta hide"
+  try {
+    let myID = document.getElementById("wallet");
+    var y = window.scrollY;
+    if (y >= 80) {
+      myID.className = "cta show"
+    } else {
+      myID.className = "cta hide"
+    }
+  } catch (error) {
+    
   }
 };
 
@@ -35,24 +39,31 @@ function App() {
 
   return (
     <div className="App">
-      <Hero />
+      <Hero account={account} setAccount={setAccount} web3modal={web3modal} setWeb3modal={setWeb3modal} provider={provider} setProvider={setProvider} />
       <Metaverse />
       <Stand />
       <Date />
       <div className="container-fluid">
         <img src={require('./assets/images/comingsoon.gif').default} alt="Coming Soon" className="img-fluid" />
       </div>
-      <button id={"wallet"} onClick={
-        () => {
-          handleConnectWallet({
-              setAccount,
-              setWeb3modal,
-              setProvider
-          })
-          }
-      }>
-        <img src={require('./assets/images/connectWalletCircle.png').default} alt="Boton wallet flotante" className='circle-wallet'/>
-      </button>
+      { account?
+        <>
+          <div></div>
+        </>:
+        <>
+          <button id={"wallet"} onClick={
+            () => {
+              handleConnectWallet({
+                  setAccount,
+                  setWeb3modal,
+                  setProvider
+              })
+              }
+          }>
+            <img src={require('./assets/images/connectWalletCircle.png').default} alt="Boton wallet flotante" className='circle-wallet'/>
+          </button>
+        </>
+      }
       <Footer />
     </div>
   );
