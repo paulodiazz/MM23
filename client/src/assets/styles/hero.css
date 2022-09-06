@@ -1,3 +1,7 @@
+.hero {
+    z-index: 5;
+}
+
 .muy-left {
     padding-top: 1.5rem;
 }
@@ -27,7 +31,7 @@
 .btn-wallet {
     background-color: transparent;
     border: none;
-    width: 8rem;
+    width: 7.5rem;
     background-image: url("../images//UI/connectWallet.png");
     background-size: contain;
     background-repeat: no-repeat;

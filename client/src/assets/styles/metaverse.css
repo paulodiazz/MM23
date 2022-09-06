@@ -1,29 +1,30 @@
 .metaverse {
-    background-image: url("../images//welcometoverse.gif");
-    background-repeat: no-repeat;
+    background-image: url("../images//welcometoverse_crop.gif");
     background-size: cover;
-    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 25vh;
 }
 
 #flyman-metaverse {
-    width: 50%;
-    transform: translateY(8rem);
+    width: 40%;
+    transform: translateY(1.25rem);
 }
 
 @media screen and (min-width: 500px) {
     #flyman-metaverse {
-        width: 40%;
-        transform: translateY(6.5rem);
+        width: 27%;
+        transform: translateY(0.5rem);
     }
 }
 
 @media screen and (min-width: 1024px) {
     .metaverse {
-        height: 100vh;
+        height: 60vh;
     }
 
     #flyman-metaverse {
-        width: 35%;
-        transform: translateY(13rem);
+        width: 30%;
+        transform: translateY(0.125rem);
     }
 }

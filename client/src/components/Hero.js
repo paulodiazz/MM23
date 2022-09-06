@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { handleConnectWallet } from "../utils/WalletConnect";
+import {ethers} from "ethers"
 import "../assets/styles/main.css"
 import "../assets/styles/hero.css"
 import MuyLogo from '../assets/images/moymulogo.svg';
@@ -12,7 +13,7 @@ const Hero = () => {
     const [provider, setProvider] = useState();
 
     return(
-        <div className="bg-black">
+        <div className="hero bg-black">
             <div className="container-fluid w-75">
                 <div className="row ">
                     <div className="col-md-6 pb-2">

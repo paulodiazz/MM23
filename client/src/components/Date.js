@@ -7,9 +7,9 @@ const Date = () => {
     return(
         <div className="bg-black">
             <div className="container-fluid">
-                <div className='row'>
-                    <div className='col-md-6'>
-                        <img className="img-fluid" src={golf} alt="Muy playing golf" />
+                <div className='row g-0'>
+                    <div className='col-md-6' id="golf">
+                        <img src={golf} alt="Muy playing golf" className="img-fluid" />
                     </div>
                     <div className='col-md-6 bg-black text-light'>
                         <div className="container">
