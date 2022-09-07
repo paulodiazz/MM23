@@ -1,16 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { handleConnectWallet } from "../utils/WalletConnect";
-import {ethers} from "ethers"
 import "../assets/styles/main.css"
 import "../assets/styles/hero.css"
 import MuyLogo from '../assets/images/moymulogo.svg';
 
 
 const Hero = ({ account, setAccount, web3modal, setWeb3modal, provider, setProvider }) => {
-
-    // const [account, setAccount] = useState(undefined);
-    // const [web3modal, setWeb3modal] = useState();
-    // const [provider, setProvider] = useState();
 
     return(
         <div className="hero bg-black">

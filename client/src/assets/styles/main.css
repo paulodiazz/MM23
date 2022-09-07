@@ -31,6 +31,10 @@ button:focus {
   background-color: #121212;
 }
 
+.bg-blue {
+  background-color: #616dba;
+}
+
 .bg-noise {
   background-image: url('../images/beautiful_background.png');
 }

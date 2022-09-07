@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import {ethers} from "ethers"
 import Hero from './components/Hero';
 import Footer from './components/Footer';
 import Metaverse from './components/Metaverse';
 import Stand from './components/Stand';
 import Date from './components/Date';
+import Team from './components/Team';
 import './App.css';
 import { handleConnectWallet } from "./utils/WalletConnect";
 import './assets/styles/main.css';
@@ -43,6 +43,8 @@ function App() {
       <Metaverse />
       <Stand />
       <Date />
+      <Team />
+      {/* Coming soon gif */}
       <div className="container-fluid">
         <img src={require('./assets/images/comingsoon.gif').default} alt="Coming Soon" className="img-fluid" />
       </div>

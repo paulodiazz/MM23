@@ -3,10 +3,11 @@
     padding-left: 0px !important;
 }
 
-.btn-team {
-    border-radius: 100px;
-    background-color: #ddf21e;
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
+@media screen and (min-width: 1024px) {
+    #right-golf {
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        vertical-align: 50%;
+    }
 }

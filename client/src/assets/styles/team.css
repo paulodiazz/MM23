@@ -1,0 +1,15 @@
+.btn-team {
+    border-radius: 100px;
+    background-color: #ddf21e;
+    padding: 1rem 1.75rem;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    color: black;
+    font-size: 54px;
+    font-weight: bold;
+}
+
+.team-img {
+    width: 340px;
+    height: auto;
+}
