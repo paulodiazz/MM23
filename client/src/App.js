@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Hero from './components/Hero';
 import Footer from './components/Footer';
 import Metaverse from './components/Metaverse';
@@ -15,6 +15,11 @@ import './assets/styles/main.css';
 //   const signer = provider.getSigner();
 //   console.log(signer);
 // };
+
+
+
+
+
 
 var scrollFunc = function() {
   try {
@@ -33,9 +38,20 @@ var scrollFunc = function() {
 window.addEventListener("scroll", scrollFunc);
 
 function App() {
-  const [account, setAccount] = useState(undefined);
-  const [web3modal, setWeb3modal] = useState();
-  const [provider, setProvider] = useState();
+
+  const [data, setData] = React.useState(null);
+
+  React.useEffect(() => {
+    fetch("/api")
+      .then((res) => res.json())
+      .then((data) => setData(data.message));
+  }, []);
+
+
+
+  const [account, setAccount] = React.useState(undefined);
+  const [web3modal, setWeb3modal] = React.useState();
+  const [provider, setProvider] = React.useState();
 
   return (
     <div className="App">
@@ -67,6 +83,7 @@ function App() {
         </>
       }
       <Footer />
+      <p>{!data ? "Loading..." : data}</p>
     </div>
   );
 }

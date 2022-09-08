@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { handleConnectWallet } from "../utils/WalletConnect";
+import WhiteListForm from "./WhiteListForm";
+import Button from "./Button";
 import "../assets/styles/main.css"
 import "../assets/styles/hero.css"
 import MuyLogo from '../assets/images/moymulogo.svg';
 
-
 const Hero = ({ account, setAccount, web3modal, setWeb3modal, provider, setProvider }) => {
+
+    const [whitelistState, changeWhitelist] = useState(false);
 
     return(
         <div className="hero bg-black">
@@ -58,6 +61,15 @@ const Hero = ({ account, setAccount, web3modal, setWeb3modal, provider, setProvi
                     </div>
                     <div className="col-md-6">
                         <img src={require('../assets/images/change5.gif').default} alt="Carrusel NFT" className="mx-auto flyman" />
+                    </div>
+                </div>
+                <div className="row">
+                    <div className='col-md-6 pb-4'>
+                            <Button text="Mint nft"/>
+                    </div>
+                    <div className='col-md-6 pb-4'>
+                        <Button text="Whitelist" onClick={() => changeWhitelist(!whitelistState)}/>
+                        <WhiteListForm state={whitelistState} changeWhitelist={changeWhitelist} />
                     </div>
                 </div>
             </div>

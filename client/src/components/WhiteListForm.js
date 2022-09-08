@@ -53,7 +53,7 @@ const WhiteListForm = ({state, changeWhitelist}) => {
                             <div className="row py-2">
                                 <input type="text" name="wallet" className="form-control mx-auto" placeholder="Wallet" onChange={handleInputChange}></input>
                             </div>
-                            <button className="blue-button" type="submit">Submit</button>
+                            <button className="blue-button gradient-button-3" type="submit">Submit</button>
                         </form>
                     </Fragment>
                 </div>
