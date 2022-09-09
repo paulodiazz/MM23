@@ -1,18 +1,38 @@
 [
     {
-        "name": "Chamo",
-        "img": "/chamo.png"
+        "name": "Mafer",
+        "img": "/mafer.png"
     },
     {
-        "name": "Jano",
-        "img": "/jano.png"
+        "name": "Oso",
+        "img": "/oso.png"
     },
     {
-        "name": "Fabo",
-        "img": "/fabo.png"
+        "name": "Lobo",
+        "img": "/lobo.png"
     },
     {
-        "name": "Manny",
-        "img": "/manny.png"
+        "name": "Paulo",
+        "img": "/paulo.png"
+    },
+    {
+        "name": "Emiliano",
+        "img": "/emiliano.png"
+    },
+    {
+        "name": "Alonzo",
+        "img": "/alonzo.png"
+    },
+    {
+        "name": "Polo",
+        "img": "/polo.png"
+    },
+    {
+        "name": "Octavio",
+        "img": "/octavio.png"
+    },
+    {
+        "name": "Gaby",
+        "img": "/gaby.png"
     }
 ]

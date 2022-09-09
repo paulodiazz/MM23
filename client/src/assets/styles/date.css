@@ -3,11 +3,60 @@
     padding-left: 0px !important;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 500px) {
     #right-golf {
-        width: 80%;
-        height: 80%;
         margin: auto;
         vertical-align: 50%;
     }
+
+    #right-golf h2 {
+        font-size: 1.125rem;
+        text-align: left !important;
+    }
+
+    #right-golf p {
+        font-size: 0.875rem;
+        font-weight: bold;
+    }
+
+    #first-h1 {
+        padding-top: 4.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #right-golf {
+        width: 80%;
+        margin: auto;
+        vertical-align: 50%;
+    }
+
+    #right-golf h2 {
+        font-size: 2rem;
+        text-align: left !important;
+    }
+
+    #right-golf p {
+        font-size: 1rem;
+    }
+
+    #first-h1 {
+        padding-top: 6.5rem;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    #right-golf h2 {
+        font-size: 2rem;
+        text-align: left !important;
+    }
+
+    #right-golf p {
+        font-size: 1.25rem;
+    }
+
+    #first-h1 {
+        padding-top: 10.5rem;
+    }
+
 }

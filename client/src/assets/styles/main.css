@@ -1,9 +1,23 @@
 * {
-  font-family: mundial, -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* font-family: sans-serif; */
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 38px;
 }
 
 p {
+  font-family: source-sans-pro, sans-serif;
   font-size: 16px;
+  margin: 0% !important;
 }
 
 hr {
@@ -49,7 +63,8 @@ hr {
 }
 
 .bg-blue {
-  background-color: #8FC4D9;
+  background: rgb(115,139,153);
+  background: radial-gradient(circle, rgba(115,139,153,1) 0%, rgba(22,22,22,1) 100%);
 }
 
 .bg-noise {
@@ -60,7 +75,7 @@ hr {
   color: #DDF21E;
 }
 
-@media screen and (min-width: 500px) {  
+@media screen and (min-width: 500px) {
 
   .border-between > [class*='col-']:before {
     background: black;

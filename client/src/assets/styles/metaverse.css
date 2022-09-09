@@ -7,8 +7,7 @@
 }
 
 #flyman-metaverse {
-    width: 40%;
-    transform: translateY(1.25rem);
+    width: 50%;
 }
 
 @media screen and (min-width: 500px) {

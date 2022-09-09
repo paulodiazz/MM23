@@ -8,22 +8,55 @@
 }
 
 .top-left p {
-        color: #FFFFFF;
+    padding-bottom: 0.75rem;
 }
 
 @media screen and (min-width: 500px) {
     .top-left{
         position: absolute;
-        left:15%;
-        top:25%;
+        left:3%;
+        top:1%;
+        width: 50%;
+    }
+
+    .top-left h2 {
+        font-size: 1.125rem;
+        text-align: left !important;
+    }
+
+    .top-left p {
+        font-size: 0.75rem;
+        font-weight: bold;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .top-left{
         position: absolute;
-        left:15%;
-        top:50%;
-        width: 25%;
+        top:8%;
+        left:5%;
+        width: 50%;
+    }
+
+    .top-left h2 {
+        font-size: 2rem;
+        text-align: left !important;
+    }
+
+    .top-left p {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .top-left h2 {
+        font-size: 2.5rem;
+        text-align: left !important;
+    }
+
+    .top-left p {
+        font-size: 1.5rem;
+        font-weight: bold;
     }
 }

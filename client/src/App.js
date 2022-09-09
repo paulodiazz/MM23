@@ -39,13 +39,13 @@ window.addEventListener("scroll", scrollFunc);
 
 function App() {
 
-  const [data, setData] = React.useState(null);
+  // const [data, setData] = React.useState(null);
 
-  React.useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
-  }, []);
+  // React.useEffect(() => {
+  //   fetch("/api")
+  //     .then((res) => res.json())
+  //     .then((data) => setData(data.message));
+  // }, []);
 
 
 
@@ -61,7 +61,7 @@ function App() {
       <Date />
       <Team />
       {/* Coming soon gif */}
-      <div className="container-fluid">
+      <div className="container-fluid p-0">
         <img src={require('./assets/images/comingsoon.gif').default} alt="Coming Soon" className="img-fluid" />
       </div>
       { account?
@@ -83,7 +83,7 @@ function App() {
         </>
       }
       <Footer />
-      <p>{!data ? "Loading..." : data}</p>
+      {/* <p>{!data ? "Loading..." : data}</p> */}
     </div>
   );
 }

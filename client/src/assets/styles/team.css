@@ -9,7 +9,38 @@
     font-weight: bold;
 }
 
+.team-card {
+    width: 8rem;
+    /* height: 6.5rem; */
+    border-radius: 40% 40% 20% 20%;
+    /* background: radial-gradient(#616dba, #121212); */
+    /* background: radial-gradient(#8EACBF, #121212); */
+    
+    /* background-color: #8EACBF; */
+
+    /* background: rgb(19,19,19);
+    background: radial-gradient(circle, rgba(19,19,19,1) 0%, rgba(123,148,164,1) 95%, rgba(142,172,191,1) 100%); */
+
+    background: rgb(115,139,153);
+    background: radial-gradient(circle, rgba(115,139,153,1) 0%, rgba(22,22,22,1) 100%);
+}
+
 .team-img {
-    width: 340px;
+    width: 100px;
     height: auto;
+}
+
+@media screen and (min-width: 500px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+    .team-card {
+        width: 20rem;
+    }
+    
+    .team-img {
+        width: 300px;
+        height: auto;
+    }
 }
