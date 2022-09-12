@@ -47,6 +47,10 @@
     width: 100%;
 }
 
+#connect-to-mint {
+    font-size: 18px;
+}
+
 @media screen and (min-width: 500px) {
     .muy-left {
         padding-top: 2.5rem;
@@ -54,6 +58,10 @@
 }
  
 @media screen and (min-width: 1024px) {
+    #connect-to-mint {
+        font-size: 15px;
+    }
+
     .muy-left {
         padding-top: 7rem;
     }

@@ -26,11 +26,12 @@ hr {
 
 .blue-button {
   margin: 1rem;
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 12px;
-  padding: 1rem;
+  font-family: source-sans-pro, Gadget, sans-serif;
+  font-size: 24px;
+  height: 3.5rem;
+  font-weight: bold;
+  padding: 0.75rem;
   text-align: center;
-  text-transform: uppercase;
   background-size: 200% auto;
   color: #FFF;
   box-shadow: 0 0 20px #eee;
@@ -101,8 +102,7 @@ hr {
 
 @media screen and (min-width: 1024px) {
   .blue-button {
-    width: 75%;
-    font-size: 18px;
+    width: 35%;
   }
 
   hr {

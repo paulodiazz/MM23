@@ -1,11 +1,22 @@
 const express = require("express");
+const csv = require('csv-parser');
+const fs = require('fs');
+const CSVToJSON = require('csvtojson');
 
 const PORT = process.env.PORT || 3001;
 
 const app = express();
 
 app.get("/api", (req, res) => {
-    res.json({ message: "Hello from server!" });
+    CSVToJSON().fromFile("./whitelist.csv")
+    .then(data => {
+        console.log(data)
+        res.json({ message: data });
+
+    }).catch(err => {
+            console.log(err);
+        }
+    )
 });
   
 app.listen(PORT, () => {

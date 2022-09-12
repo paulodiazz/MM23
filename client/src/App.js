@@ -42,8 +42,6 @@ function App() {
   //     .then((data) => setData(data.message));
   // }, []);
 
-
-
   const [account, setAccount] = React.useState(undefined);
   const [web3modal, setWeb3modal] = React.useState();
   const [provider, setProvider] = React.useState();

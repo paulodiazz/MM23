@@ -9,6 +9,7 @@ const Stand = () => {
             <img src={require("../assets/images/UI/bgStand.png").default} alt="" className="img" />
             <div className="top-left">
                 <div className="container text-light text-justify">
+                    <h1 className="text-center text-yellow pt-1" id="roadmap">Roadmap</h1>
                     <h2 className="text-center text-yellow">20%</h2>
                     <p>
                         Después de nuestro día de Mint vamos a contactar a los holders con NFT especiales (NFL, HIR, LUST, JUMP AIR) para que puedan empezar a gozar de los beneficios desde el día uno.

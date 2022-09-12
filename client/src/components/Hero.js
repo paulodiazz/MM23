@@ -67,10 +67,10 @@ const Hero = ({ account, setAccount, web3modal, setWeb3modal, provider, setProvi
                     <div className='col-md-6 pb-4 no-padding'>
                         { account?
                             <>
-                                <Button text="Mint nft"/>
+                                <button className="blue-button gradient-button-3 text-uppercase">Mint NFT</button>
                                 </>:
                             <>
-                                <Button text="Connect your wallet to mint!" />
+                                <button className="blue-button gradient-button-3 text-uppercase" id="connect-to-mint" disabled={true}>Connect your wallet to Mint!</button>
                             </>
                         }
                     </div>
