@@ -3,29 +3,35 @@
     padding-left: 0px !important;
 }
 
-@media screen and (min-width: 500px) {
+#right-golf {
+    width: 90%;
+}
 
+#right-golf p {
+    font-family: source-sans-pro;
+    font-weight: bold;
+}
+
+#right-golf h2 {
+    font-family: source-sans-pro;
+    font-weight: bold;
+    font-size: 38px;
+}
+@media screen and (min-width: 1024px) {
     #right-golf {
-        margin: auto;
-        vertical-align: 50%;
-    }
-
-    #right-golf h2 {
-        font-size: 1.125rem;
-        text-align: left !important;
+        width: 90%;
     }
 
     #right-golf p {
-        font-size: 0.875rem;
-        font-weight: bold;
+        font-size: 1rem;
     }
 
-    #first-h1 {
-        padding-top: 1.5rem;
+    #right-golf h2 {
+        font-size: 1.75rem;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
     #swing {
         display: none;
     }
@@ -40,34 +46,16 @@
         height: 0;
         padding-top: 50%;
     }
-    
+
     #right-golf {
-        width: 80%;
-        margin: auto;
-        vertical-align: 50%;
-    }
-
-    #right-golf h2 {
-        font-size: 2rem;
-        text-align: left !important;
-    }
-
-    #right-golf p {
-        font-size: 1rem;
-    }
-
-    #first-h1 {
-        padding-top: 4.5rem;
-    }
-}
-
-@media screen and (min-width: 1232px) {
-    #right-golf h2 {
-        font-size: 2rem;
-        text-align: left !important;
+        width: 70%;
     }
 
     #right-golf p {
         font-size: 1.25rem;
+    }
+
+    #right-golf h2 {
+        font-size: 2.5rem;
     }
 }
