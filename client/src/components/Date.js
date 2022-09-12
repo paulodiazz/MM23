@@ -7,10 +7,10 @@ const Date = () => {
     return(
         <div className="container-fluid bg-blue">
             <div className='row'>
-                <div className='col-md-6' id="golf">
-                    <img src={golf} alt="Muy playing golf" className="img-fluid" />
+                <div className='col-lg-6' id="golf">
+                    <img src={golf} alt="Muy playing golf" id="swing" className="img-fluid" />
                 </div>
-                <div className='col-md-6 text-light'>
+                <div className='col-lg-6 text-light'>
                     <div className="container d-flex align-items-center" id="right-golf">
                         <div className="d-flex flex-column text-justify">
                             <h2 className="text-center text-yellow" id="first-h1">

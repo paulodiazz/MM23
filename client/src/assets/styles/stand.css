@@ -4,30 +4,11 @@
 }
 
 .img{
-    width:100%;
+    width:inherit;
 }
 
 .top-left p {
     padding-bottom: 0.75rem;
-}
-
-@media screen and (min-width: 500px) {
-    .top-left{
-        position: absolute;
-        left:3%;
-        top:1%;
-        width: 50%;
-    }
-
-    .top-left h2 {
-        font-size: 1.125rem;
-        text-align: left !important;
-    }
-
-    .top-left p {
-        font-size: 0.75rem;
-        font-weight: bold;
-    }
 }
 
 @media screen and (min-width: 1024px) {

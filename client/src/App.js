@@ -16,11 +16,6 @@ import './assets/styles/main.css';
 //   console.log(signer);
 // };
 
-
-
-
-
-
 var scrollFunc = function() {
   try {
     let myID = document.getElementById("wallet");

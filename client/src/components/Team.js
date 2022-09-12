@@ -34,12 +34,14 @@ const teamMembers = data2.map(member => {
 const Team = () => {
     return(
         <div className="container-fluid bg-noise">
-            <button className="btn btn-team text-uppercase">Meet the team</button>
-            <div className="row">
-                { teamMembersFirstRow }
-            </div>
-            <div className="row">
-                { teamMembers }
+            <div className="team-container mx-auto">
+                <button className="btn btn-team text-uppercase">Meet the team</button>
+                <div className="row">
+                    { teamMembersFirstRow }
+                </div>
+                <div className="row">
+                    { teamMembers }
+                </div>
             </div>
         </div>
     );

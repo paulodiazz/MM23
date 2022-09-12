@@ -64,10 +64,17 @@ const Hero = ({ account, setAccount, web3modal, setWeb3modal, provider, setProvi
                     </div>
                 </div>
                 <div className="row">
-                    <div className='col-md-6 pb-4'>
-                            <Button text="Mint nft"/>
+                    <div className='col-md-6 pb-4 no-padding'>
+                        { account?
+                            <>
+                                <Button text="Mint nft"/>
+                                </>:
+                            <>
+                                <Button text="Connect your wallet to mint!" />
+                            </>
+                        }
                     </div>
-                    <div className='col-md-6 pb-4'>
+                    <div className='col-md-6 pb-4 no-padding'>
                         <Button text="Whitelist" onClick={() => changeWhitelist(!whitelistState)}/>
                         <WhiteListForm state={whitelistState} changeWhitelist={changeWhitelist} />
                     </div>
