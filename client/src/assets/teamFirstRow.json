@@ -1,18 +1,22 @@
 [
     {
         "name": "Chamo",
-        "img": "/chamo.png"
+        "img": "/chamo.png",
+        "info": "Main developer"
     },
     {
         "name": "Jano",
-        "img": "/jano.png"
+        "img": "/jano.png",
+        "info": "Main developer"
     },
     {
         "name": "Fabo",
-        "img": "/fabo.png"
+        "img": "/fabo.png",
+        "info": "Main developer"
     },
     {
         "name": "Manny",
-        "img": "/manny.png"
+        "img": "/manny.png",
+        "info": "Main developer"
     }
 ]

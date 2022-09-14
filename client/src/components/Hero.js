@@ -6,7 +6,7 @@ import "../assets/styles/main.css"
 import "../assets/styles/hero.css"
 import MuyLogo from '../assets/images/moymulogo.svg';
 
-const Hero = ({ account, setAccount, web3modal, setWeb3modal, provider, setProvider }) => {
+const Hero = ({ account, setAccount, web3modal, setWeb3modal, provider, setProvider, mint }) => {
 
     const [whitelistState, changeWhitelist] = useState(false);
 
@@ -67,7 +67,7 @@ const Hero = ({ account, setAccount, web3modal, setWeb3modal, provider, setProvi
                     <div className='col-md-6 pb-4 no-padding'>
                         { account?
                             <>
-                                <button className="blue-button gradient-button-3 text-uppercase">Mint NFT</button>
+                                <button className="blue-button gradient-button-3 text-uppercase" onClick={mint}>Mint NFT</button>
                                 </>:
                             <>
                                 <button className="blue-button gradient-button-3 text-uppercase" id="connect-to-mint" disabled={true}>Connect your wallet to Mint!</button>

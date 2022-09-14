@@ -8,6 +8,10 @@ import Team from './components/Team';
 import './App.css';
 import { handleConnectWallet } from "./utils/WalletConnect";
 import './assets/styles/main.css';
+import abi_ from './abi.json'
+import {ethers} from "ethers"
+
+const collection_add = "0xB0eb034BA19DC2B8BeFc1e9E95220429a0B1D728"
 
 // const connectWallet = async  () => {
 //   await window.ethereum.enable()
@@ -15,6 +19,15 @@ import './assets/styles/main.css';
 //   const signer = provider.getSigner();
 //   console.log(signer);
 // };
+
+const mint = async () => {
+    await window.ethereum.enable()
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const signer = await provider.getSigner();
+    const collection = new ethers.Contract (collection_add, abi_, signer);
+    console.log(signer);
+    collection.mint(1);
+}
 
 var scrollFunc = function() {
   try {
@@ -48,7 +61,7 @@ function App() {
 
   return (
     <div className="App">
-      <Hero account={account} setAccount={setAccount} web3modal={web3modal} setWeb3modal={setWeb3modal} provider={provider} setProvider={setProvider} />
+      <Hero account={account} setAccount={setAccount} web3modal={web3modal} setWeb3modal={setWeb3modal} provider={provider} setProvider={setProvider} mint={mint} />
       <Metaverse />
       <Stand />
       <Date />

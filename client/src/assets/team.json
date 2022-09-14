@@ -1,38 +1,47 @@
 [
     {
         "name": "Mafer",
-        "img": "/mafer.png"
+        "img": "/mafer.png",
+        "info": "Main dev"
     },
     {
         "name": "Oso",
-        "img": "/oso.png"
+        "img": "/oso.png",
+        "info": "Main dev"
     },
     {
         "name": "Lobo",
-        "img": "/lobo.png"
+        "img": "/lobo.png",
+        "info": "Main dev"
     },
     {
         "name": "Paulo",
-        "img": "/paulo.png"
+        "img": "/paulo.png",
+        "info": "Main dev"
     },
     {
         "name": "Emiliano",
-        "img": "/emiliano.png"
+        "img": "/emiliano.png",
+        "info": "Main dev"
     },
     {
         "name": "Alonzo",
-        "img": "/alonzo.png"
+        "img": "/alonzo.png",
+        "info": "Main dev"
     },
     {
         "name": "Polo",
-        "img": "/polo.png"
+        "img": "/polo.png",
+        "info": "Main dev"
     },
     {
         "name": "Octavio",
-        "img": "/octavio.png"
+        "img": "/octavio.png",
+        "info": "Main dev"
     },
     {
         "name": "Gaby",
-        "img": "/gaby.png"
+        "img": "/gaby.png",
+        "info": "Main dev"
     }
 ]
