@@ -36,16 +36,16 @@ const Hero = ({ account, setAccount, web3modal, setWeb3modal, provider, setProvi
                             <div>
                                 { account?
                                     <>
-                                        <button className="btn-wallet pt-4 text-uppercase font-weight-bold text-center h5" onClick={
+                                        <button className="yellow-button gradient-button-2 text-uppercase" onClick={
                                             async ()=>{
                                             await web3modal.clearCachedProvider();
                                             window.localStorage.clear();
                                             setAccount(undefined);
                                             setProvider();}
-                                            }>DISCONNECT</button>
+                                            }>Disconnect</button>
                                         </>:
                                     <>
-                                        <button className="btn-wallet pt-4 text-uppercase font-weight-bold text-center h5" onClick={
+                                        <button className="yellow-button gradient-button-2 text-uppercase" onClick={
                                             () => {
                                             handleConnectWallet({
                                                 setAccount,
@@ -53,7 +53,7 @@ const Hero = ({ account, setAccount, web3modal, setWeb3modal, provider, setProvi
                                                 setProvider
                                             })
                                             }
-                                        } ></button>
+                                        } >Connect</button>
                                     </>
                                 }
                             </div>

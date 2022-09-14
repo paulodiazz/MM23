@@ -25,7 +25,7 @@ const teamMembers = data2.map(member => {
             <div className="team-card mx-auto">
                 <img src={require('../assets/images/team' + member.img).default} className="mx-auto d-block team-img" alt="team member" />
                 <div className="text-center pt-3">
-                    <h4>{member.name}</h4>
+                    <h5>{member.name}</h5>
                     <p>{member.info}</p>
                 </div>
             </div>
@@ -39,11 +39,11 @@ const Team = () => {
             <div className="team-container mx-auto">
                 <button className="btn btn-team text-uppercase">Meet the team</button>
                 <div className="flyman-container mx-auto">
-                <img src={require("../assets/images/flymanMetaverse.png").default} alt="Snow" className="img-fluid" />
-                <div class="centered">
-                    <h4>Moy Muñoz</h4>
-                    <p>Main dev</p>
-                </div>
+                    <img src={require("../assets/images/flymanMetaverse.png").default} alt="Snow" className="img-fluid" />
+                    <div class="centered">
+                        <h5>Moy Muñoz</h5>
+                        <p>Main dev</p>
+                    </div>
                 </div>
                 <div className="row">
                     { teamMembersFirstRow }
