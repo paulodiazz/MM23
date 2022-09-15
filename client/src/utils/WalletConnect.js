@@ -9,9 +9,9 @@ const providerOptions = {
     walletconnect: {
       package: WalletConnectProvider, 
       options: {
-        infuraId: "da5788510cac487aa9aa09ce47de1fd8", 
+        infuraId: "", 
         rpc: {
-          80001: "https://polygon-mumbai.infura.io/v3/da5788510cac487aa9aa09ce47de1fd8"
+          4: "https://dimensional-omniscient-hexagon.rinkeby.discover.quiknode.pro/abacea936acca49fe5a95e58e1db2bad0fed7855/"
           },
       }
     }
@@ -19,28 +19,35 @@ const providerOptions = {
 
 const web3modal = new Web3Modal(
     {
-        network : "mumbai",
+        network : "rinkeby",
         theme : "dark",
         cacheProvider : false,
         providerOptions
     } 
 );
 
-export const handleConnectWallet = async function connectWallet({setAccount,setWeb3modal,setProvider}) {
+export const handleConnectWallet = async function connectWallet({setAccount,setWeb3modal,setProvider, setCanMint, canMint}) {
   try {
     var provider = await web3modal.connect()
 
     await provider.enable();
     var web3 = new Web3(provider)
     const acc = await web3.eth.getAccounts(); 
-
-    // var provider2 =  new ethers.providers.Web3Provider(provider);
     
-    // handleAuth(web3,provider2);
-
     setAccount(acc[0]);
-    setWeb3modal(web3modal); 
+    setWeb3modal(web3modal);
     setProvider(provider);
+
+    var userNetworkId = await web3.eth.net.getId();
+    console.log(userNetworkId);
+
+    if ( userNetworkId !== 4) {
+      setCanMint(false);
+    } else {
+      setCanMint(true);
+    }
+    console.log(canMint);
+
   } catch (error) {
     console.log(error);
   }

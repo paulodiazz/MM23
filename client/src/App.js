@@ -11,23 +11,7 @@ import './assets/styles/main.css';
 import abi_ from './abi.json'
 import {ethers} from "ethers"
 
-const collection_add = "0xB0eb034BA19DC2B8BeFc1e9E95220429a0B1D728"
-
-// const connectWallet = async  () => {
-//   await window.ethereum.enable()
-//   const provider = new ethers.providers.Web3Provider(window.ethereum);
-//   const signer = provider.getSigner();
-//   console.log(signer);
-// };
-
-const mint = async () => {
-    await window.ethereum.enable()
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
-    const signer = await provider.getSigner();
-    const collection = new ethers.Contract (collection_add, abi_, signer);
-    console.log(signer);
-    collection.mint(1);
-}
+const collection_add = "0xB0eb034BA19DC2B8BeFc1e9E95220429a0B1D728";
 
 var scrollFunc = function() {
   try {
@@ -58,10 +42,19 @@ function App() {
   const [account, setAccount] = React.useState(undefined);
   const [web3modal, setWeb3modal] = React.useState();
   const [provider, setProvider] = React.useState();
+  const [canMint, setCanMint] = React.useState(true);
+
+  const mint = async () => {
+    const ethersProvider = new ethers.providers.Web3Provider(provider);
+    const signer = await ethersProvider.getSigner();
+    const collection = new ethers.Contract (collection_add, abi_, signer);
+    console.log(signer);
+    collection.mint(1);
+  }
 
   return (
     <div className="App">
-      <Hero account={account} setAccount={setAccount} web3modal={web3modal} setWeb3modal={setWeb3modal} provider={provider} setProvider={setProvider} mint={mint} />
+      <Hero account={account} setAccount={setAccount} web3modal={web3modal} setWeb3modal={setWeb3modal} provider={provider} setProvider={setProvider} mint={mint} setCanMint={setCanMint} canMint={canMint} />
       <Metaverse />
       <Stand />
       <Date />
@@ -80,7 +73,9 @@ function App() {
               handleConnectWallet({
                   setAccount,
                   setWeb3modal,
-                  setProvider
+                  setProvider,
+                  setCanMint,
+                  canMint
               })
               }
           }>

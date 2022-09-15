@@ -6,7 +6,7 @@ import "../assets/styles/main.css"
 import "../assets/styles/hero.css"
 import MuyLogo from '../assets/images/moymulogo.svg';
 
-const Hero = ({ account, setAccount, web3modal, setWeb3modal, provider, setProvider, mint }) => {
+const Hero = ({ account, setAccount, web3modal, setWeb3modal, provider, setProvider, mint, strMint, canMint, setCanMint }) => {
 
     const [whitelistState, changeWhitelist] = useState(false);
 
@@ -50,7 +50,9 @@ const Hero = ({ account, setAccount, web3modal, setWeb3modal, provider, setProvi
                                             handleConnectWallet({
                                                 setAccount,
                                                 setWeb3modal,
-                                                setProvider
+                                                setProvider,
+                                                setCanMint,
+                                                canMint
                                             })
                                             }
                                         } >Connect</button>
@@ -67,7 +69,14 @@ const Hero = ({ account, setAccount, web3modal, setWeb3modal, provider, setProvi
                     <div className='col-md-6 pb-4 no-padding'>
                         { account?
                             <>
-                                <button className="blue-button gradient-button-3 text-uppercase" onClick={mint}>Mint NFT</button>
+                                { canMint?
+                                    <>
+                                        <button className="blue-button gradient-button-3 text-uppercase" onClick={mint}>Mint NFT</button>
+                                    </>:
+                                    <>
+                                        <button className="blue-button gradient-button-3 text-uppercase" id="connect-to-mint">Connect to Rinkeby</button>
+                                    </>
+                                }
                                 </>:
                             <>
                                 <button className="blue-button gradient-button-3 text-uppercase" id="connect-to-mint" disabled={true}>Connect your wallet to Mint!</button>
