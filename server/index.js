@@ -1,22 +1,23 @@
 const express = require("express");
-const csv = require('csv-parser');
 const fs = require('fs');
-const CSVToJSON = require('csvtojson');
 
+// Port
 const PORT = process.env.PORT || 3001;
 
+// Initialize app
 const app = express();
 
 app.post("/add-whitelist", (req, res) => {
-    CSVToJSON().fromFile("./whitelist.csv")
-    .then(data => {
-        console.log(data)
-        res.json({ message: data });
 
-    }).catch(err => {
-            console.log(err);
-        }
-    )
+    // Save email and wallet from request
+    var email = req.query.email;
+    var wallet = req.query.wallet;
+
+    row = '\n"' + email + '", "' + wallet + '"';
+
+    fs.appendFileSync("./whitelist.csv", row);
+    
+    res.send(true);
 });
 
 app.listen(PORT, () => {
