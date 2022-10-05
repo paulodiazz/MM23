@@ -10,6 +10,7 @@ import { handleConnectWallet } from "./utils/WalletConnect";
 import './assets/styles/main.css';
 import abi_ from './abi.json'
 import {ethers} from "ethers"
+import "animate.css/animate.min.css";
 
 const collection_add = "0xB0eb034BA19DC2B8BeFc1e9E95220429a0B1D728";
 

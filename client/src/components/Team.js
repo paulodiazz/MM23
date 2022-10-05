@@ -1,4 +1,5 @@
 import React from "react";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import "../assets/styles/main.css"
 import "../assets/styles/team.css"
 import data1 from "../assets/teamFirstRow.json"
@@ -7,14 +8,15 @@ import data2 from "../assets/team.json"
 const teamMembersFirstRow = data1.map(member => {
     return (
         <div className="col-6 col-md-3 text-light pb-3">
-            <div className="team-card mx-auto">
-                <img src={require('../assets/images/team' + member.img).default} className="mx-auto d-block team-img" alt={"team member" + member.name} />
-                <div className="text-center pt-3">
-                    <h4>{member.name}</h4>
-                    <p className="pb-3">{member.info}</p>
+            <AnimationOnScroll animateIn="animate__bounceIn">
+                <div className="team-card mx-auto">
+                    <img src={require('../assets/images/team' + member.img).default} className="mx-auto d-block team-img" alt={"team member" + member.name} />
+                    <div className="text-center pt-3">
+                        <h4>{member.name}</h4>
+                        <p className="pb-3">{member.info}</p>
+                    </div>
                 </div>
-            </div>
-            
+            </AnimationOnScroll>
         </div>
     )
 });
@@ -22,13 +24,15 @@ const teamMembersFirstRow = data1.map(member => {
 const teamMembers = data2.map(member => {
     return (
         <div className="col-6 col-md-4 text-light pb-3">
-            <div className="team-card mx-auto">
-                <img src={require('../assets/images/team' + member.img).default} className="mx-auto d-block team-img" alt="team member" />
-                <div className="text-center pt-3">
-                    <h5>{member.name}</h5>
-                    <p>{member.info}</p>
+            <AnimationOnScroll animateIn="animate__bounceIn">
+                <div className="team-card mx-auto">
+                    <img src={require('../assets/images/team' + member.img).default} className="mx-auto d-block team-img" alt="team member" />
+                    <div className="text-center pt-3">
+                        <h5>{member.name}</h5>
+                        <p>{member.info}</p>
+                    </div>
                 </div>
-            </div>
+            </AnimationOnScroll>
         </div>
     )
 });

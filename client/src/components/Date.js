@@ -1,13 +1,13 @@
 import React from "react";
-import golf from '../assets/images/Swing.gif';
+import golf from '../assets/images/SwingShort.gif';
 import "../assets/styles/main.css"
 import "../assets/styles/date.css"
 
 const Date = () => {
     return(
         <div className="container-fluid bg-blue">
-            <div className='row'>
-                <div className='col-lg-6' id="golf">
+            <div className='row' id="golf">
+                <div className='col-lg-6 p-0' >
                     <img src={golf} alt="Muy playing golf" id="swing" className="img-fluid" />
                 </div>
                 <div className='col-lg-6 text-light d-flex no-padding'>
