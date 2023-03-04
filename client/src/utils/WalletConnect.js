@@ -11,7 +11,7 @@ const providerOptions = {
       options: {
         infuraId: "", 
         rpc: {
-          4: "https://dimensional-omniscient-hexagon.rinkeby.discover.quiknode.pro/abacea936acca49fe5a95e58e1db2bad0fed7855/"
+          5: "https://goerli.infura.io/v3/298ba66b8db34d9a8cfc2e279fc3c7eb"
           },
       }
     }
@@ -19,7 +19,7 @@ const providerOptions = {
 
 const web3modal = new Web3Modal(
     {
-        network : "rinkeby",
+        network : "goerli",
         theme : "dark",
         cacheProvider : false,
         providerOptions
@@ -41,7 +41,7 @@ export const handleConnectWallet = async function connectWallet({setAccount,setW
     var userNetworkId = await web3.eth.net.getId();
     console.log(userNetworkId);
 
-    if ( userNetworkId !== 4) {
+    if ( userNetworkId !== 5) {
       setCanMint(false);
     } else {
       setCanMint(true);

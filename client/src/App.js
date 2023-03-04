@@ -12,7 +12,7 @@ import abi_ from './abi.json'
 import {ethers} from "ethers"
 import "animate.css/animate.min.css";
 
-const collection_add = "0xB0eb034BA19DC2B8BeFc1e9E95220429a0B1D728";
+const collection_add = "0x899aF4E1340035D01E295FF2511Af41B313118e2";
 
 var scrollFunc = function() {
   try {
